@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
+{% extends "base.html" %}
 
-    {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'ruto/style.css' %}"/>
-</head>
-<body>
-<nav class="navbar">
-    <ul class="nav navbar-nav navbar-right">
-        <li><a class="active" href="/">Winston</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="#">WHERE</a></li>
-    </ul>
-</nav>
-<div class="content">
+{% block title %}ATITLE{% endblock %}
 
-    <footer>
-        <p>
-            &copy; {% now "Y" %} - Winston
-        </p>
-    </footer>
-</div>
-</body>
-</html>
+{% block content %}
+DIS BE CONTENTS
+{% endblock %}
