@@ -30,9 +30,17 @@ li a:not(.logo) {
     float: right;
 }
 
+li a:hover {
+    color: blue;
+}
+
 .logo {
     float: left;
     text-align: center;
+}
+
+.content {
+    padding: 20px;
 }
 
 li a {
